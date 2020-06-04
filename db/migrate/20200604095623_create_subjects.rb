@@ -4,7 +4,7 @@ class CreateSubjects < ActiveRecord::Migration[5.2]
 
       t.string :name, null: false, limit: 15
       t.integer :position
-      t.boolean :bisible
+      t.boolean :visible, default: false
 
       t.timestamps
     end

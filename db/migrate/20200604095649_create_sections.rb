@@ -10,5 +10,7 @@ class CreateSections < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+  
+    add_index :sections, :page_id
   end
 end
