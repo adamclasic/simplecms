@@ -4,8 +4,8 @@ class CreateSections < ActiveRecord::Migration[5.2]
       t.integer :page_id
       t.string :name
       t.integer :position
-      t.boolean :visible
-      t.string : content_type
+      t.boolean :visible, default: false
+      t.string :content_type
       t.text :content
 
       t.timestamps
