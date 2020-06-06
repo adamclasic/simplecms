@@ -1,2 +1,4 @@
 class Page < ApplicationRecord
-end
+
+    belongs_to :subject
+end 
